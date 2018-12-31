@@ -52,12 +52,19 @@ $("#surveySubmit").on("click", function () {
             let reducedScoreDifference = differenceScoreArr.reduce(getSum, 0);
             allScoreDifferenceArr.push(reducedScoreDifference);
         }
-        allScoreDifferenceArr.sort(function (a, b) {
-            return a - b
+        let scoreDifferenceList = [];
+        for (const k = 0; k < friendsData.length - 1; k++) {
+            scoreDifferenceList.push({
+                "name": friendsData[k].name, "photo": friendsData[k].photo, "scoreDifference": allScoreDifferenceArr[k]
+            });
+            
+        }
+        scoreDifferenceList.sort(function (a, b) {
+            return a.scoreDifference - b.scoreDifference;
         });
         individualMatch = {
-            name: allScoreDifferenceArr[0].name,
-            photo: allScoreDifferenceArr[0].photo
+            name: scoreDifferenceList[0].name,
+            photo: scoreDifferenceList[0].photo
         }
         $("#modalMatchName").text(individualMatch.name);
         $("#modalMatchPhoto").attr("img", individualMatch.photo);
