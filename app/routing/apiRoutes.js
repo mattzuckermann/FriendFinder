@@ -1,4 +1,4 @@
-const friendsData = require("../data/friends");
+const friendsData = require("./data/friends");
 const express = require("express");
 const app = express();
 
