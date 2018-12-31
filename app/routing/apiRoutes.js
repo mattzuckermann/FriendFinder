@@ -17,7 +17,7 @@ $("#surveySubmit").on("click", function () {
         // =======================================
         // FIND OUT IF THIS IS PROPER SYNTAX BELOW
         // =======================================
-        
+
         return formsFilled;
     }
     if (checkValid()) {
@@ -74,6 +74,8 @@ $("#surveySubmit").on("click", function () {
         $("#modalMatchName").text(individualMatch.name);
         $("#modalMatchPhoto").attr("img", individualMatch.photo);
         $("#modalPopUp").attr("style", "display:block");
+        
+        console.log("This code works just fine; here are the result... Name: " + individualMatch[0].name + " & Photo Link: " + individualMatch[0].photo);
     } else {
         alert("Please be sure to fill in all forms and selectors");
     }
