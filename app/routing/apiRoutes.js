@@ -14,13 +14,17 @@ $("#surveySubmit").on("click", function () {
             || $("#inputPhoto").val().trim() === "" || $("#inputPhoto").val() === null) {
             let formsFilled = false;
         }
+        // =======================================
+        // FIND OUT IF THIS IS PROPER SYNTAX BELOW
+        // =======================================
+        
         return formsFilled;
     }
     if (checkValid()) {
         // Push new individual into friends.js
         const emptyNameValue = $("#inputName").val().trim();
         const emptyPhotoValue = $("#inputPhoto").val().trim();
-        let personalScoreArr = [];
+        const personalScoreArr = [];
         // Looping through class to get values to be pushed into personalScoreArr
         ($(".custom-select").each(function () {
             let currentScoreValue = $(this).val();
@@ -33,11 +37,12 @@ $("#surveySubmit").on("click", function () {
         }
         friendsData.push(newPersonObject);
 
-        const allScoreDifferenceArr = [];
         // Compare scores between individual and function to show modal popup of match
+        const allScoreDifferenceArr = [];
+
         for (const i = 0; i < friendsData.length - 1; i++) {
-            let otherScoreArr = [];
             let differenceScoreArr = [];
+            let otherScoreArr = [];
             for (const j = 0; j < friendsData[i].scores.length; j++) {
                 otherScoreArr.push(friendsData[i].scores[j]);
                 let currentScoreDifference = personalScoreArr[j] - otherScoreArr[j];
@@ -52,12 +57,12 @@ $("#surveySubmit").on("click", function () {
             let reducedScoreDifference = differenceScoreArr.reduce(getSum, 0);
             allScoreDifferenceArr.push(reducedScoreDifference);
         }
-        let scoreDifferenceList = [];
+
+        const scoreDifferenceList = [];
         for (const k = 0; k < friendsData.length - 1; k++) {
             scoreDifferenceList.push({
                 "name": friendsData[k].name, "photo": friendsData[k].photo, "scoreDifference": allScoreDifferenceArr[k]
             });
-            
         }
         scoreDifferenceList.sort(function (a, b) {
             return a.scoreDifference - b.scoreDifference;
