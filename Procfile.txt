@@ -1,1 +1,1 @@
-web: node htmlRoutes.js
+web: node server.js

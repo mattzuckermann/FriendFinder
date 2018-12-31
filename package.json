@@ -2,9 +2,9 @@
   "name": "Friend-Finder_Express-Node-Javascript",
   "version": "1.0.0",
   "description": "",
-  "main": "htmlRoutes.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node htmlRoutes.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
