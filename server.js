@@ -12,9 +12,3 @@ require("./app/routing/htmlRoutes")(app);
 app.listen(PORT, function () {
     console.log("App listening on PORT http://localhost:" + PORT);
 });
-
-
-// CREATE DRY CODE WITH THESE TOOLS:
-    // USE HANDLEBARS
-    // USE CONSTRUCTOR FUNCTIONS
-    // USE FOR LOOPS TO POST IN HTML USING HANDLEBARS?
