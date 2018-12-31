@@ -2,9 +2,9 @@
   "name": "Friend-Finder_Express-Node-Javascript",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "htmlRoutes.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node htmlRoutes.js"
   },
   "repository": {
     "type": "git",
