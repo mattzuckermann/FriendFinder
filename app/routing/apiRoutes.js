@@ -40,9 +40,9 @@ $("#surveySubmit").on("click", function () {
             personalScoreArr.push(currentScoreValue);
         }));
         const newPersonObject = {
-            name = emptyNameValue,
-            photo = emptyPhotoValue,
-            scores = personalScoreArr
+            name: emptyNameValue,
+            photo: emptyPhotoValue,
+            scores: personalScoreArr
         }
         friendsData.push(newPersonObject);
 
@@ -80,9 +80,9 @@ $("#surveySubmit").on("click", function () {
             name: scoreDifferenceList[0].name,
             photo: scoreDifferenceList[0].photo
         }
-        $("#modalMatchName").text(individualMatch.name);
-        $("#modalMatchPhoto").attr("img", individualMatch.photo);
-        $("#modalPopUp").attr("style", "display:block");
+        // $("#modalMatchName").text(individualMatch.name);
+        // $("#modalMatchPhoto").attr("img", individualMatch.photo);
+        // $("#modalPopUp").attr("style", "display:block");
 
         console.log("This code works just fine; here are the result... Name: " + individualMatch[0].name + " & Photo Link: " + individualMatch[0].photo);
     } else {
