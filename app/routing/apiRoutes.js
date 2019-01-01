@@ -1,5 +1,14 @@
 const friendsData = require("../data/friends.js");
 
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
+const { window } = new JSDOM();
+const { document } = (new JSDOM('')).window;
+global.document = document;
+
+const $ = jQuery = require('jquery')(window);
+
+
 console.log(friendsData);
 
 $("#surveySubmit").on("click", function () {
@@ -74,7 +83,7 @@ $("#surveySubmit").on("click", function () {
         $("#modalMatchName").text(individualMatch.name);
         $("#modalMatchPhoto").attr("img", individualMatch.photo);
         $("#modalPopUp").attr("style", "display:block");
-        
+
         console.log("This code works just fine; here are the result... Name: " + individualMatch[0].name + " & Photo Link: " + individualMatch[0].photo);
     } else {
         alert("Please be sure to fill in all forms and selectors");
