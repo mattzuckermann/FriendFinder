@@ -1,4 +1,4 @@
-const friendsData = [
+[
     {
         name: "Ahmed",
         photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQptnSkzbgCFeEiDwTv3TPt9BWJ45Fd7qpo99ro41mlIbVz8Ezn",
@@ -48,5 +48,3 @@ const friendsData = [
         ]
     }
 ];
-
-module.exports = friendsData;
