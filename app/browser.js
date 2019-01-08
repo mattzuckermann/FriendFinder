@@ -101,6 +101,6 @@ $("#surveySubmit").on("click", function (event) {
             });
         });
     } else {
-        alert("Please be sure to fill in all forms and selectors");
+        $("#modalMatchName").text("Uh oh! Not all forms and/or selections were filled out!");
     }
 });
