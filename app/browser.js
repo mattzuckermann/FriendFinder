@@ -1,4 +1,6 @@
-$("#surveySubmit").on("click", function () {
+$("#surveySubmit").on("click", function (event) {
+    event.preventDefault();
+
     //Function checking if all forms and selecions are filled out
     function checkValid() {
         let formsFilled;
@@ -88,9 +90,9 @@ $("#surveySubmit").on("click", function () {
                 photo: scoreDifferenceList[0].photo,
                 scoreDifference: scoreDifferenceList[0].scoreDifference
             }
-            // $("#modalMatchName").text(individualMatch.name);
-            // $("#modalMatchPhoto").attr("img", individualMatch.photo);
-            // $("#modalPopUp").attr("style", "display:block");
+            $("#modalMatchName").text(individualMatch.name);
+            $("#modalMatchPhoto").attr("src", individualMatch.photo);
+            $("#modalScoreDifference").text(` ${individualMatch.scoreDifference}`);
 
             //Change all values back for next survey
             $("#inputName").val("")
@@ -98,8 +100,6 @@ $("#surveySubmit").on("click", function () {
             $(".custom-select").each(function () {
                 $(this).val("Select an Option");
             });
-
-            console.log("Name: " + individualMatch.name + "| Photo Link: " + individualMatch.photo + " | Score Difference: " + individualMatch.scoreDifference);
         });
     } else {
         alert("Please be sure to fill in all forms and selectors");
