@@ -28,6 +28,7 @@ $("#surveySubmit").on("click", function (event) {
         // const queryURL = "http://localhost:3000/api/friends";
         // const queryURL = "https://mczuckermann.github.io/Friend-Finder_Express-Node-Javascript/"
         const queryURL = "https://friend-finder-zuckermann.herokuapp.com/api/friends";
+        console.log("I got this far!");
         $.ajax({
             crossDomain: true,
             url: queryURL,
@@ -38,7 +39,7 @@ $("#surveySubmit").on("click", function (event) {
         }).then(function (response) {
             const friendsData = response;
             console.log(response);
-            
+
             // Push new individual into friends.js
             const emptyNameValue = $("#inputName").val().trim();
             const emptyPhotoValue = $("#inputPhoto").val().trim();
