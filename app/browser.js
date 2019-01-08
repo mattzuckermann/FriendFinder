@@ -88,7 +88,7 @@ $("#surveySubmit").on("click", function (event) {
                 photo: scoreDifferenceList[0].photo,
                 scoreDifference: scoreDifferenceList[0].scoreDifference
             }
-            $("#modalMatchName").text(individualMatch.name);
+            $("#modalMatchName").text(`You've been matched with ${individualMatch.name}!`);
             $("#modalMatchPhoto").attr("src", individualMatch.photo);
             $("#modalScoreDifference").text(` ${individualMatch.scoreDifference}`);
 
@@ -100,6 +100,7 @@ $("#surveySubmit").on("click", function (event) {
             });
         });
     } else {
-        $("#modalMatchName").text("Uh oh! Not all forms and/or selections were filled out!");
+        $("#modalMatchName").text("Oops! It appears you didnt fill out all selections.");
+        $("#modalMatchPhoto").attr("src", "https://vignette.wikia.nocookie.net/batman/images/6/60/Question_Mark.png/revision/latest?cb=20101213130523");
     }
 });
