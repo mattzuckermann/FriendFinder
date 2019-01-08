@@ -28,8 +28,12 @@ $("#surveySubmit").on("click", function (event) {
         const queryURL = "https://friend-finder-zuckermann.herokuapp.com/api/friends";
         // const queryURL = "http://localhost:3000/api/friends";
         $.ajax({
+            crossDomain: true,
             url: queryURL,
-            type: 'GET',
+            method: 'GET',
+            callback: "callback",
+            format: "jsonp",
+            dataType: "jsonp"
         }).then(function (response) {
             const friendsData = response;
 
