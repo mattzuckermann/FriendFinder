@@ -26,8 +26,8 @@ $("#surveySubmit").on("click", function (event) {
 
     if (checkValid()) {
         // const queryURL = "http://localhost:3000/api/friends";
-        const queryURL = "https://mczuckermann.github.io/Friend-Finder_Express-Node-Javascript/"
-        // const queryURL = "https://friend-finder-zuckermann.herokuapp.com/api/friends";
+        // const queryURL = "https://mczuckermann.github.io/Friend-Finder_Express-Node-Javascript/"
+        const queryURL = "https://friend-finder-zuckermann.herokuapp.com/api/friends";
         $.ajax({
             crossDomain: true,
             url: queryURL,
@@ -56,8 +56,8 @@ $("#surveySubmit").on("click", function (event) {
             friendsData.push(newPersonObject);
             $.ajax({
                 // url: "http://localhost:3000/api/friends",
-                url: "https://mczuckermann.github.io/Friend-Finder_Express-Node-Javascript/",
-                // url: "https://friend-finder-zuckermann.herokuapp.com/api/friends",
+                // url: "https://mczuckermann.github.io/Friend-Finder_Express-Node-Javascript/",
+                url: "https://friend-finder-zuckermann.herokuapp.com/api/friends",
                 method: "POST",
                 data: newPersonObject
             });
