@@ -25,8 +25,8 @@ $("#surveySubmit").on("click", function (event) {
     }
 
     if (checkValid()) {
-        // const queryURL = "https://friend-finder-zuckermann.herokuapp.com/api/friends";
-        const queryURL = "http://localhost:3000/api/friends";
+        const queryURL = "https://friend-finder-zuckermann.herokuapp.com/api/friends";
+        // const queryURL = "http://localhost:3000/api/friends";
         $.ajax({
             url: queryURL,
             type: 'GET',
@@ -49,8 +49,8 @@ $("#surveySubmit").on("click", function (event) {
             }
             friendsData.push(newPersonObject);
             $.ajax({
-                url: "http://localhost:3000/api/friends",
-                // url: "https://friend-finder-zuckermann.herokuapp.com/api/friends",
+                // url: "http://localhost:3000/api/friends",
+                url: "https://friend-finder-zuckermann.herokuapp.com/api/friends",
                 method: "POST",
                 data: newPersonObject
             });
