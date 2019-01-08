@@ -91,7 +91,6 @@ $("#surveySubmit").on("click", function (event) {
             $("#modalMatchName").text(individualMatch.name);
             $("#modalMatchPhoto").attr("src", individualMatch.photo);
             $("#modalScoreDifference").text(` ${individualMatch.scoreDifference}`);
-            $('#myModal').modal('toggle');
 
             //Change all values back for next survey
             $("#inputName").val("")
