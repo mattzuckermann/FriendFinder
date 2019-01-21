@@ -3,7 +3,7 @@
 
 ![screen shot 2019-01-20 at 9 27 01 pm](https://user-images.githubusercontent.com/41619692/51454574-3f3ee900-1cfa-11e9-984f-a3fa993fe36e.png)
 
-![](ezgif.com-crop.gif)
+![](https://media.giphy.com/media/9sQxJzbdxKPzw7J3Bt/giphy.gif)
 
 ![Uploading ezgif.com-crop.gif…]()
 
