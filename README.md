@@ -1,5 +1,7 @@
 # Friend-Finder_Express-Node-Javascript
 
+![screen shot 2019-01-20 at 9 27 01 pm](https://user-images.githubusercontent.com/41619692/51454574-3f3ee900-1cfa-11e9-984f-a3fa993fe36e.png)
+
 This project is a friend finder app that takes in the name, photo link,
 and selection data of the user.
 
