@@ -13,10 +13,11 @@ to tell the closest match to the current user input.
 
 The friends.js JSON data will be joined with the score differences (compared to current user scores),
 sorted from lowest score to highest score, and the first object literal within the JSON array will be
-matched with a variable object and display on a modal pop-up.
+defined on a variable that is an object literal and that variable data will be displayed on a modal pop-up.
 
 Upon hitting close on the modal pop-up, the app resets for the next user form.
 
-My deployed project can be seen on Heroku at the link below:
 
+
+My deployed project can be seen on Heroku at the link below:
 https://friend-finder-zuckermann.herokuapp.com/
