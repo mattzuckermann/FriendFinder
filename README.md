@@ -3,7 +3,7 @@
 ![](https://media.giphy.com/media/9sQxJzbdxKPzw7J3Bt/giphy.gif)
 
 This project is a friend finder app that takes in the name, photo link,
-and selection data of the user.
+and selection data of the user, which then matches you with the closest individual score in the friends.js JSON file.
 
 If any of the forms or selections are left unfilled, an alert message will be displayed
 informing the user to complete all forms and selections.
