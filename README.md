@@ -28,5 +28,4 @@ Upon hitting close on the modal pop-up, the app resets for the next user form.
 
 ### Deployment
 
-My deployed project can be seen on Heroku at the link below:
-https://friend-finder-zuckermann.herokuapp.com/
+My deployed project can be seen [here](https://friend-finder-zuckermann.herokuapp.com/) on Heroku.
