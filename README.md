@@ -1,9 +1,16 @@
 # Friend-Finder_Express-Node-Javascript
 
-<img src="https://media.giphy.com/media/9sQxJzbdxKPzw7J3Bt/giphy.gif" alt="Gif Demonstration of App" width=100%>
 
+
+### Purpose of App:
 This project is a friend finder app that takes in the name, photo link,
 and selection data of the user, which then matches you with the closest individual score in the friends.js JSON file.
+
+### GIF Demonstration of App:
+
+<img src="https://media.giphy.com/media/9sQxJzbdxKPzw7J3Bt/giphy.gif" alt="Gif Demonstration of App" width=100%>
+
+### Text Walk Through:
 
 If any of the forms or selections are left unfilled, an alert message will be displayed
 informing the user to complete all forms and selections.
@@ -19,7 +26,7 @@ defined on a variable that is an object literal and that variable data will be d
 
 Upon hitting close on the modal pop-up, the app resets for the next user form.
 
-
+### Deployment
 
 My deployed project can be seen on Heroku at the link below:
 https://friend-finder-zuckermann.herokuapp.com/
