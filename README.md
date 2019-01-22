@@ -6,9 +6,13 @@
 This project is a friend finder app that takes in the name, photo link,
 and selection data of the user, which then matches you with the closest individual score in the friends.js JSON file.
 
+---
+
 ### GIF Demonstration of App:
 
 <img src="https://media.giphy.com/media/9sQxJzbdxKPzw7J3Bt/giphy.gif" alt="Gif Demonstration of App" width=100%>
+
+---
 
 ### Text Walk Through:
 
@@ -25,6 +29,8 @@ sorted from lowest score to highest score, and the first object literal within t
 defined on a variable that is an object literal and that variable data will be displayed on a modal pop-up.
 
 Upon hitting close on the modal pop-up, the app resets for the next user form.
+
+---
 
 ### Deployment
 
