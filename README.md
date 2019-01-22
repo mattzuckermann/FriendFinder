@@ -1,6 +1,6 @@
 # Friend-Finder_Express-Node-Javascript
 
-![](https://media.giphy.com/media/9sQxJzbdxKPzw7J3Bt/giphy.gif)
+<img src="https://media.giphy.com/media/9sQxJzbdxKPzw7J3Bt/giphy.gif" alt="Gif Demonstration of App" width=100%>
 
 This project is a friend finder app that takes in the name, photo link,
 and selection data of the user, which then matches you with the closest individual score in the friends.js JSON file.
